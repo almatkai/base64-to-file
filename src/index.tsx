@@ -37,7 +37,7 @@ export default function Command() {
           writableStream.end();
         })
         .catch(reject);
-      writableStream.on("finish", () => resolve());
+      writableStream.on("finish", () => resolve(undefined));
       writableStream.on("error", reject);
     });
   };
@@ -68,7 +68,7 @@ export default function Command() {
         await writeFile(values.filePath, blob);
         showToast({
           style: Toast.Style.Success,
-          title: "Error",
+          title: "Converted",
           message: `Converted successfully: ${values.filePath}`,
         });
         await showInFinder(values.filePath);
