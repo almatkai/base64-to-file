@@ -1,0 +1,197 @@
+   Packaging tezbar-base64-to-file v0.1.0 (<V2_ROOT>)
+    Packaged 1257 files, 30.1MiB (20.4MiB compressed)
+RUN python3 scripts/prepare-offline.py
+Offline support verified; local vendor and beta harness ready
+RUN node scripts/schema.cjs
+Pinned full draft-2020 schema: manifest + 11 negative cases; exact original icon: PASS
+RUN node scripts/v1-oracle.cjs <V2_ROOT>/test-output/package-repro-puos_qm9/oracle.json
+RUN node scripts/renderer.cjs
+Pinned Form parser/reconciliation, full submit maps, field callback value shape, actual surface handlers, Detail/List parser smoke and action ordering: PASS
+RUN python3 scripts/registration-test.py
+Registration dry run on disposable pinned host and preceding-port fixture: PASS (real host untouched)
+RUN cargo +stable test --locked --offline
+   Compiling libc v0.2.191
+   Compiling io-lifetimes v2.0.4
+   Compiling rustix v1.1.5
+   Compiling proc-macro2 v1.0.107
+   Compiling bitflags v2.13.2
+   Compiling io-extras v0.18.4
+   Compiling getrandom v0.3.4
+   Compiling quote v1.0.47
+   Compiling unicode-ident v1.0.27
+   Compiling cfg-if v1.0.5
+   Compiling serde_core v1.0.229
+   Compiling cap-primitives v3.4.6
+   Compiling maybe-owned v0.3.4
+   Compiling serde v1.0.229
+   Compiling ipnet v2.12.2
+   Compiling ambient-authority v0.0.2
+   Compiling cap-std v3.4.5
+   Compiling serde_json v1.0.140
+   Compiling once_cell v1.21.4
+   Compiling memchr v2.8.3
+   Compiling fastrand v2.5.0
+   Compiling pin-project-lite v0.2.17
+   Compiling itoa v1.0.18
+   Compiling ryu v1.0.23
+   Compiling syn v2.0.119
+   Compiling tokio-macros v2.5.0
+   Compiling tokio v1.44.2
+   Compiling errno v0.3.14
+   Compiling uuid v1.16.0
+   Compiling fs-set-times v0.20.3
+   Compiling tempfile v3.19.1
+   Compiling tezbar-base64-to-file v0.1.0 (<V2_ROOT>/test-output/package-repro-puos_qm9/tezbar-base64-to-file-0.1.0)
+    Finished `test` profile [unoptimized + debuginfo] target(s) in 5.18s
+     Running unittests src/lib.rs (<V2_ROOT>/test-output/package-repro-puos_qm9/target/debug/deps/tezbar_base64_to_file-5d3b775de75da5e7)
+
+running 2 tests
+test tests::stage_collision_never_removes_or_modifies_an_existing_entry ... ok
+test tests::partial_failure_leaves_original_and_no_stage ... ok
+
+test result: ok. 2 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.00s
+
+     Running tests/core.rs (<V2_ROOT>/test-output/package-repro-puos_qm9/target/debug/deps/core-f47caf172ac08efe)
+
+running 6 tests
+test executable_v1_oracle_bytes_and_rejections ... ok
+test concurrent_publication_has_only_complete_outputs_and_no_stages ... ok
+test real_create_binary_overwrite_zero_and_failures ... ok
+test link_policy_permissions_and_parent_alias ... ok
+test raced_final_symlink_never_writes_its_target ... ok
+test bounded_work_never_truncates ... ok
+
+test result: ok. 6 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.38s
+
+   Doc-tests tezbar_base64_to_file
+
+running 0 tests
+
+test result: ok. 0 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.00s
+
+RUN cargo +stable test --manifest-path tests/beta-harness/Cargo.toml --locked --offline
+   Compiling log v0.4.27
+   Compiling tauri v0.0.0 (<V2_ROOT>/test-output/package-repro-puos_qm9/tezbar-base64-to-file-0.1.0/tests/beta-harness/tauri)
+   Compiling beta-runtime v0.1.0 (<V2_ROOT>/test-output/package-repro-puos_qm9/tezbar-base64-to-file-0.1.0/tests/beta-harness/runtime)
+   Compiling beta-harness v0.1.0 (<V2_ROOT>/test-output/package-repro-puos_qm9/tezbar-base64-to-file-0.1.0/tests/beta-harness)
+    Finished `test` profile [unoptimized + debuginfo] target(s) in 1.22s
+     Running unittests src/lib.rs (<V2_ROOT>/test-output/package-repro-puos_qm9/target/debug/deps/beta_harness-eabbe3a0bdc243b0)
+
+running 0 tests
+
+test result: ok. 0 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.00s
+
+     Running tests/adapter.rs (<V2_ROOT>/test-output/package-repro-puos_qm9/target/debug/deps/adapter-d0d4db89c756b6ed)
+
+running 8 tests
+test actual_native_sessions_binary_write_reveal_once_and_stale_cross_session ... ok
+test malformed_inputs_validation_io_errors_preserve_drafts_and_never_reveal ... ok
+test cloned_search_refresh_state_and_token_lifecycle ... ok
+test cancelled_reveal_retains_saved_receipt_and_requires_deliberate_retry ... ok
+test strict_acknowledgements_reveal_retry_never_rewrites ... ok
+test cancelled_write_future_worker_still_records_completion ... ok
+test export_renderer_samples_when_requested ... ok
+test four_write_limit_rejects_without_io_and_recovers_after_workers_finish ... ok
+
+test result: ok. 8 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.11s
+
+   Doc-tests beta_harness
+
+running 0 tests
+
+test result: ok. 0 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.00s
+
+RUN cargo +1.85.0 test --locked --offline
+   Compiling libc v0.2.191
+   Compiling io-lifetimes v2.0.4
+   Compiling rustix v1.1.5
+   Compiling bitflags v2.13.2
+   Compiling proc-macro2 v1.0.107
+   Compiling unicode-ident v1.0.27
+   Compiling getrandom v0.3.4
+   Compiling io-extras v0.18.4
+   Compiling quote v1.0.47
+   Compiling cap-primitives v3.4.6
+   Compiling serde_core v1.0.229
+   Compiling cfg-if v1.0.5
+   Compiling serde v1.0.229
+   Compiling cap-std v3.4.5
+   Compiling ambient-authority v0.0.2
+   Compiling maybe-owned v0.3.4
+   Compiling ipnet v2.12.2
+   Compiling serde_json v1.0.140
+   Compiling memchr v2.8.3
+   Compiling once_cell v1.21.4
+   Compiling itoa v1.0.18
+   Compiling pin-project-lite v0.2.17
+   Compiling ryu v1.0.23
+   Compiling fastrand v2.5.0
+   Compiling syn v2.0.119
+   Compiling tokio-macros v2.5.0
+   Compiling errno v0.3.14
+   Compiling uuid v1.16.0
+   Compiling tokio v1.44.2
+   Compiling fs-set-times v0.20.3
+   Compiling tempfile v3.19.1
+   Compiling tezbar-base64-to-file v0.1.0 (<V2_ROOT>/test-output/package-repro-puos_qm9/tezbar-base64-to-file-0.1.0)
+    Finished `test` profile [unoptimized + debuginfo] target(s) in 6.01s
+     Running unittests src/lib.rs (<V2_ROOT>/test-output/package-repro-puos_qm9/target/debug/deps/tezbar_base64_to_file-6e76d613abb2a356)
+
+running 2 tests
+test tests::stage_collision_never_removes_or_modifies_an_existing_entry ... ok
+test tests::partial_failure_leaves_original_and_no_stage ... ok
+
+test result: ok. 2 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.00s
+
+     Running tests/core.rs (<V2_ROOT>/test-output/package-repro-puos_qm9/target/debug/deps/core-3ff5f95a287e376e)
+
+running 6 tests
+test executable_v1_oracle_bytes_and_rejections ... ok
+test concurrent_publication_has_only_complete_outputs_and_no_stages ... ok
+test real_create_binary_overwrite_zero_and_failures ... ok
+test link_policy_permissions_and_parent_alias ... ok
+test raced_final_symlink_never_writes_its_target ... ok
+test bounded_work_never_truncates ... ok
+
+test result: ok. 6 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.37s
+
+   Doc-tests tezbar_base64_to_file
+
+running 0 tests
+
+test result: ok. 0 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.00s
+
+RUN cargo +1.85.0 test --manifest-path tests/beta-harness/Cargo.toml --locked --offline
+   Compiling log v0.4.27
+   Compiling tauri v0.0.0 (<V2_ROOT>/test-output/package-repro-puos_qm9/tezbar-base64-to-file-0.1.0/tests/beta-harness/tauri)
+   Compiling beta-runtime v0.1.0 (<V2_ROOT>/test-output/package-repro-puos_qm9/tezbar-base64-to-file-0.1.0/tests/beta-harness/runtime)
+   Compiling beta-harness v0.1.0 (<V2_ROOT>/test-output/package-repro-puos_qm9/tezbar-base64-to-file-0.1.0/tests/beta-harness)
+    Finished `test` profile [unoptimized + debuginfo] target(s) in 1.14s
+     Running unittests src/lib.rs (<V2_ROOT>/test-output/package-repro-puos_qm9/target/debug/deps/beta_harness-6e9ccfafb767ee66)
+
+running 0 tests
+
+test result: ok. 0 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.00s
+
+     Running tests/adapter.rs (<V2_ROOT>/test-output/package-repro-puos_qm9/target/debug/deps/adapter-4eab7e5ff5a0841c)
+
+running 8 tests
+test cancelled_reveal_retains_saved_receipt_and_requires_deliberate_retry ... ok
+test malformed_inputs_validation_io_errors_preserve_drafts_and_never_reveal ... ok
+test cloned_search_refresh_state_and_token_lifecycle ... ok
+test export_renderer_samples_when_requested ... ok
+test strict_acknowledgements_reveal_retry_never_rewrites ... ok
+test actual_native_sessions_binary_write_reveal_once_and_stale_cross_session ... ok
+test cancelled_write_future_worker_still_records_completion ... ok
+test four_write_limit_rejects_without_io_and_recovers_after_workers_finish ... ok
+
+test result: ok. 8 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.11s
+
+   Doc-tests beta_harness
+
+running 0 tests
+
+test result: ok. 0 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.00s
+
+PASS: extracted Cargo package + empty Cargo home offline stable/1.85 core and unchanged-beta harness tests
+Evidence retained: <V2_ROOT>/test-output/package-repro-puos_qm9

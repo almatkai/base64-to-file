@@ -1,0 +1,1021 @@
+{
+  "node": "v26.7.0",
+  "source": "fixtures/v1/src/index.tsx",
+  "utils": "fixtures/utils/main.js (unchanged useForm/useLatest excerpts)",
+  "outputs": [
+    {
+      "input": "Zg==",
+      "result": true,
+      "events": [
+        [
+          "createWriteStream",
+          "/selected/output.bin"
+        ],
+        [
+          "write",
+          "66"
+        ],
+        [
+          "end"
+        ],
+        [
+          "finish"
+        ],
+        [
+          "toast",
+          {
+            "style": "success",
+            "title": "Converted",
+            "message": "Converted successfully: /selected/output.bin"
+          }
+        ],
+        [
+          "reveal",
+          "/selected/output.bin"
+        ]
+      ]
+    },
+    {
+      "input": "Zg",
+      "result": true,
+      "events": [
+        [
+          "createWriteStream",
+          "/selected/output.bin"
+        ],
+        [
+          "write",
+          "66"
+        ],
+        [
+          "end"
+        ],
+        [
+          "finish"
+        ],
+        [
+          "toast",
+          {
+            "style": "success",
+            "title": "Converted",
+            "message": "Converted successfully: /selected/output.bin"
+          }
+        ],
+        [
+          "reveal",
+          "/selected/output.bin"
+        ]
+      ]
+    },
+    {
+      "input": "Zg=",
+      "result": true,
+      "events": [
+        [
+          "toast",
+          {
+            "style": "failure",
+            "title": "Error",
+            "message": "Failed: InvalidCharacterError: Invalid character"
+          }
+        ]
+      ]
+    },
+    {
+      "input": "Zh==",
+      "result": true,
+      "events": [
+        [
+          "createWriteStream",
+          "/selected/output.bin"
+        ],
+        [
+          "write",
+          "66"
+        ],
+        [
+          "end"
+        ],
+        [
+          "finish"
+        ],
+        [
+          "toast",
+          {
+            "style": "success",
+            "title": "Converted",
+            "message": "Converted successfully: /selected/output.bin"
+          }
+        ],
+        [
+          "reveal",
+          "/selected/output.bin"
+        ]
+      ]
+    },
+    {
+      "input": "Zm8=",
+      "result": true,
+      "events": [
+        [
+          "createWriteStream",
+          "/selected/output.bin"
+        ],
+        [
+          "write",
+          "666f"
+        ],
+        [
+          "end"
+        ],
+        [
+          "finish"
+        ],
+        [
+          "toast",
+          {
+            "style": "success",
+            "title": "Converted",
+            "message": "Converted successfully: /selected/output.bin"
+          }
+        ],
+        [
+          "reveal",
+          "/selected/output.bin"
+        ]
+      ]
+    },
+    {
+      "input": "Zm9=",
+      "result": true,
+      "events": [
+        [
+          "createWriteStream",
+          "/selected/output.bin"
+        ],
+        [
+          "write",
+          "666f"
+        ],
+        [
+          "end"
+        ],
+        [
+          "finish"
+        ],
+        [
+          "toast",
+          {
+            "style": "success",
+            "title": "Converted",
+            "message": "Converted successfully: /selected/output.bin"
+          }
+        ],
+        [
+          "reveal",
+          "/selected/output.bin"
+        ]
+      ]
+    },
+    {
+      "input": "Zm9v",
+      "result": true,
+      "events": [
+        [
+          "createWriteStream",
+          "/selected/output.bin"
+        ],
+        [
+          "write",
+          "666f6f"
+        ],
+        [
+          "end"
+        ],
+        [
+          "finish"
+        ],
+        [
+          "toast",
+          {
+            "style": "success",
+            "title": "Converted",
+            "message": "Converted successfully: /selected/output.bin"
+          }
+        ],
+        [
+          "reveal",
+          "/selected/output.bin"
+        ]
+      ]
+    },
+    {
+      "input": "Zg===",
+      "result": true,
+      "events": [
+        [
+          "toast",
+          {
+            "style": "failure",
+            "title": "Error",
+            "message": "Failed: InvalidCharacterError: Invalid character"
+          }
+        ]
+      ]
+    },
+    {
+      "input": "A",
+      "result": true,
+      "events": [
+        [
+          "toast",
+          {
+            "style": "failure",
+            "title": "Error",
+            "message": "Failed: InvalidCharacterError: The string to be decoded is not correctly encoded."
+          }
+        ]
+      ]
+    },
+    {
+      "input": "AA",
+      "result": true,
+      "events": [
+        [
+          "createWriteStream",
+          "/selected/output.bin"
+        ],
+        [
+          "write",
+          "00"
+        ],
+        [
+          "end"
+        ],
+        [
+          "finish"
+        ],
+        [
+          "toast",
+          {
+            "style": "success",
+            "title": "Converted",
+            "message": "Converted successfully: /selected/output.bin"
+          }
+        ],
+        [
+          "reveal",
+          "/selected/output.bin"
+        ]
+      ]
+    },
+    {
+      "input": "AAA",
+      "result": true,
+      "events": [
+        [
+          "createWriteStream",
+          "/selected/output.bin"
+        ],
+        [
+          "write",
+          "0000"
+        ],
+        [
+          "end"
+        ],
+        [
+          "finish"
+        ],
+        [
+          "toast",
+          {
+            "style": "success",
+            "title": "Converted",
+            "message": "Converted successfully: /selected/output.bin"
+          }
+        ],
+        [
+          "reveal",
+          "/selected/output.bin"
+        ]
+      ]
+    },
+    {
+      "input": "AAAA",
+      "result": true,
+      "events": [
+        [
+          "createWriteStream",
+          "/selected/output.bin"
+        ],
+        [
+          "write",
+          "000000"
+        ],
+        [
+          "end"
+        ],
+        [
+          "finish"
+        ],
+        [
+          "toast",
+          {
+            "style": "success",
+            "title": "Converted",
+            "message": "Converted successfully: /selected/output.bin"
+          }
+        ],
+        [
+          "reveal",
+          "/selected/output.bin"
+        ]
+      ]
+    },
+    {
+      "input": "====",
+      "result": true,
+      "events": [
+        [
+          "toast",
+          {
+            "style": "failure",
+            "title": "Error",
+            "message": "Failed: InvalidCharacterError: Invalid character"
+          }
+        ]
+      ]
+    },
+    {
+      "input": " Z\tg\n=\r=\f",
+      "result": true,
+      "events": [
+        [
+          "createWriteStream",
+          "/selected/output.bin"
+        ],
+        [
+          "write",
+          "66"
+        ],
+        [
+          "end"
+        ],
+        [
+          "finish"
+        ],
+        [
+          "toast",
+          {
+            "style": "success",
+            "title": "Converted",
+            "message": "Converted successfully: /selected/output.bin"
+          }
+        ],
+        [
+          "reveal",
+          "/selected/output.bin"
+        ]
+      ]
+    },
+    {
+      "input": "Zg\u000b==",
+      "result": true,
+      "events": [
+        [
+          "toast",
+          {
+            "style": "failure",
+            "title": "Error",
+            "message": "Failed: InvalidCharacterError: Invalid character"
+          }
+        ]
+      ]
+    },
+    {
+      "input": "Zg ==",
+      "result": true,
+      "events": [
+        [
+          "toast",
+          {
+            "style": "failure",
+            "title": "Error",
+            "message": "Failed: InvalidCharacterError: Invalid character"
+          }
+        ]
+      ]
+    },
+    {
+      "input": "-_8=",
+      "result": true,
+      "events": [
+        [
+          "toast",
+          {
+            "style": "failure",
+            "title": "Error",
+            "message": "Failed: InvalidCharacterError: Invalid character"
+          }
+        ]
+      ]
+    },
+    {
+      "input": "+/8=",
+      "result": true,
+      "events": [
+        [
+          "createWriteStream",
+          "/selected/output.bin"
+        ],
+        [
+          "write",
+          "fbff"
+        ],
+        [
+          "end"
+        ],
+        [
+          "finish"
+        ],
+        [
+          "toast",
+          {
+            "style": "success",
+            "title": "Converted",
+            "message": "Converted successfully: /selected/output.bin"
+          }
+        ],
+        [
+          "reveal",
+          "/selected/output.bin"
+        ]
+      ]
+    },
+    {
+      "input": "AP+A",
+      "result": true,
+      "events": [
+        [
+          "createWriteStream",
+          "/selected/output.bin"
+        ],
+        [
+          "write",
+          "00ff80"
+        ],
+        [
+          "end"
+        ],
+        [
+          "finish"
+        ],
+        [
+          "toast",
+          {
+            "style": "success",
+            "title": "Converted",
+            "message": "Converted successfully: /selected/output.bin"
+          }
+        ],
+        [
+          "reveal",
+          "/selected/output.bin"
+        ]
+      ]
+    },
+    {
+      "input": "😀",
+      "result": true,
+      "events": [
+        [
+          "toast",
+          {
+            "style": "failure",
+            "title": "Error",
+            "message": "Failed: InvalidCharacterError: Invalid character"
+          }
+        ]
+      ]
+    },
+    {
+      "input": "é",
+      "result": true,
+      "events": [
+        [
+          "toast",
+          {
+            "style": "failure",
+            "title": "Error",
+            "message": "Failed: InvalidCharacterError: Invalid character"
+          }
+        ]
+      ]
+    },
+    {
+      "input": "data:application/pdf;base64,Zg==",
+      "result": true,
+      "events": [
+        [
+          "toast",
+          {
+            "style": "failure",
+            "title": "Error",
+            "message": "Failed: InvalidCharacterError: Invalid character"
+          }
+        ]
+      ]
+    },
+    {
+      "input": "",
+      "result": false,
+      "events": []
+    },
+    {
+      "input": " ",
+      "result": true,
+      "events": [
+        [
+          "createWriteStream",
+          "/selected/output.bin"
+        ],
+        [
+          "write",
+          ""
+        ],
+        [
+          "end"
+        ],
+        [
+          "finish"
+        ],
+        [
+          "toast",
+          {
+            "style": "success",
+            "title": "Converted",
+            "message": "Converted successfully: /selected/output.bin"
+          }
+        ],
+        [
+          "reveal",
+          "/selected/output.bin"
+        ]
+      ]
+    },
+    {
+      "input": "\t\n\r\f",
+      "result": true,
+      "events": [
+        [
+          "createWriteStream",
+          "/selected/output.bin"
+        ],
+        [
+          "write",
+          ""
+        ],
+        [
+          "end"
+        ],
+        [
+          "finish"
+        ],
+        [
+          "toast",
+          {
+            "style": "success",
+            "title": "Converted",
+            "message": "Converted successfully: /selected/output.bin"
+          }
+        ],
+        [
+          "reveal",
+          "/selected/output.bin"
+        ]
+      ]
+    },
+    {
+      "filePath": "relative.bin",
+      "result": true,
+      "events": [
+        [
+          "createWriteStream",
+          "relative.bin"
+        ],
+        [
+          "write",
+          "00ff80"
+        ],
+        [
+          "end"
+        ],
+        [
+          "finish"
+        ],
+        [
+          "toast",
+          {
+            "style": "success",
+            "title": "Converted",
+            "message": "Converted successfully: relative.bin"
+          }
+        ],
+        [
+          "reveal",
+          "relative.bin"
+        ]
+      ]
+    },
+    {
+      "filePath": "~/out.pdf",
+      "result": true,
+      "events": [
+        [
+          "createWriteStream",
+          "~/out.pdf"
+        ],
+        [
+          "write",
+          "00ff80"
+        ],
+        [
+          "end"
+        ],
+        [
+          "finish"
+        ],
+        [
+          "toast",
+          {
+            "style": "success",
+            "title": "Converted",
+            "message": "Converted successfully: ~/out.pdf"
+          }
+        ],
+        [
+          "reveal",
+          "~/out.pdf"
+        ]
+      ]
+    },
+    {
+      "filePath": " /tmp/space ",
+      "result": true,
+      "events": [
+        [
+          "createWriteStream",
+          " /tmp/space "
+        ],
+        [
+          "write",
+          "00ff80"
+        ],
+        [
+          "end"
+        ],
+        [
+          "finish"
+        ],
+        [
+          "toast",
+          {
+            "style": "success",
+            "title": "Converted",
+            "message": "Converted successfully:  /tmp/space "
+          }
+        ],
+        [
+          "reveal",
+          " /tmp/space "
+        ]
+      ]
+    },
+    {
+      "filePath": "write-error",
+      "result": true,
+      "events": [
+        [
+          "createWriteStream",
+          "write-error"
+        ],
+        [
+          "write",
+          "00ff80"
+        ],
+        [
+          "end"
+        ],
+        [
+          "error"
+        ],
+        [
+          "toast",
+          {
+            "style": "failure",
+            "title": "Error",
+            "message": "Failed: Error: write failed"
+          }
+        ]
+      ]
+    },
+    {
+      "filePath": "reveal-error",
+      "result": true,
+      "events": [
+        [
+          "createWriteStream",
+          "reveal-error"
+        ],
+        [
+          "write",
+          "00ff80"
+        ],
+        [
+          "end"
+        ],
+        [
+          "finish"
+        ],
+        [
+          "toast",
+          {
+            "style": "success",
+            "title": "Converted",
+            "message": "Converted successfully: reveal-error"
+          }
+        ],
+        [
+          "reveal",
+          "reveal-error"
+        ],
+        [
+          "toast",
+          {
+            "style": "failure",
+            "title": "Error",
+            "message": "Failed: Error: reveal failed"
+          }
+        ]
+      ]
+    }
+  ],
+  "storage": [
+    {
+      "stored": null,
+      "loadEvents": [
+        [
+          "get",
+          "convertBase64ToFile"
+        ],
+        [
+          "set",
+          "convertBase64ToFile",
+          "{\"base64\":\"\",\"filePath\":\"/oracle-home/Downloads/out.pdf\"}"
+        ]
+      ],
+      "allEvents": [
+        [
+          "get",
+          "convertBase64ToFile"
+        ],
+        [
+          "set",
+          "convertBase64ToFile",
+          "{\"base64\":\"\",\"filePath\":\"/oracle-home/Downloads/out.pdf\"}"
+        ],
+        [
+          "createWriteStream",
+          "/new"
+        ],
+        [
+          "write",
+          "66"
+        ],
+        [
+          "end"
+        ],
+        [
+          "finish"
+        ],
+        [
+          "toast",
+          {
+            "style": "success",
+            "title": "Converted",
+            "message": "Converted successfully: /new"
+          }
+        ],
+        [
+          "reveal",
+          "/new"
+        ]
+      ]
+    },
+    {
+      "stored": "{\"base64\":\"secret draft\",\"filePath\":\"/old\"}",
+      "loadEvents": [
+        [
+          "get",
+          "convertBase64ToFile"
+        ],
+        [
+          "set",
+          "convertBase64ToFile",
+          "{\"base64\":\"\",\"filePath\":\"/oracle-home/Downloads/out.pdf\"}"
+        ]
+      ],
+      "allEvents": [
+        [
+          "get",
+          "convertBase64ToFile"
+        ],
+        [
+          "set",
+          "convertBase64ToFile",
+          "{\"base64\":\"\",\"filePath\":\"/oracle-home/Downloads/out.pdf\"}"
+        ],
+        [
+          "createWriteStream",
+          "/new"
+        ],
+        [
+          "write",
+          "66"
+        ],
+        [
+          "end"
+        ],
+        [
+          "finish"
+        ],
+        [
+          "toast",
+          {
+            "style": "success",
+            "title": "Converted",
+            "message": "Converted successfully: /new"
+          }
+        ],
+        [
+          "reveal",
+          "/new"
+        ]
+      ]
+    },
+    {
+      "stored": "{broken",
+      "loadEvents": [
+        [
+          "get",
+          "convertBase64ToFile"
+        ],
+        [
+          "set",
+          "convertBase64ToFile",
+          "{\"base64\":\"\",\"filePath\":\"/oracle-home/Downloads/out.pdf\"}"
+        ]
+      ],
+      "allEvents": [
+        [
+          "get",
+          "convertBase64ToFile"
+        ],
+        [
+          "set",
+          "convertBase64ToFile",
+          "{\"base64\":\"\",\"filePath\":\"/oracle-home/Downloads/out.pdf\"}"
+        ],
+        [
+          "createWriteStream",
+          "/new"
+        ],
+        [
+          "write",
+          "66"
+        ],
+        [
+          "end"
+        ],
+        [
+          "finish"
+        ],
+        [
+          "toast",
+          {
+            "style": "success",
+            "title": "Converted",
+            "message": "Converted successfully: /new"
+          }
+        ],
+        [
+          "reveal",
+          "/new"
+        ]
+      ]
+    },
+    {
+      "stored": "null",
+      "loadEvents": [
+        [
+          "get",
+          "convertBase64ToFile"
+        ],
+        [
+          "set",
+          "convertBase64ToFile",
+          "{\"base64\":\"\",\"filePath\":\"/oracle-home/Downloads/out.pdf\"}"
+        ]
+      ],
+      "allEvents": [
+        [
+          "get",
+          "convertBase64ToFile"
+        ],
+        [
+          "set",
+          "convertBase64ToFile",
+          "{\"base64\":\"\",\"filePath\":\"/oracle-home/Downloads/out.pdf\"}"
+        ],
+        [
+          "createWriteStream",
+          "/new"
+        ],
+        [
+          "write",
+          "66"
+        ],
+        [
+          "end"
+        ],
+        [
+          "finish"
+        ],
+        [
+          "toast",
+          {
+            "style": "success",
+            "title": "Converted",
+            "message": "Converted successfully: /new"
+          }
+        ],
+        [
+          "reveal",
+          "/new"
+        ]
+      ]
+    },
+    {
+      "stored": "17",
+      "loadEvents": [
+        [
+          "get",
+          "convertBase64ToFile"
+        ],
+        [
+          "set",
+          "convertBase64ToFile",
+          "{\"base64\":\"\",\"filePath\":\"/oracle-home/Downloads/out.pdf\"}"
+        ]
+      ],
+      "allEvents": [
+        [
+          "get",
+          "convertBase64ToFile"
+        ],
+        [
+          "set",
+          "convertBase64ToFile",
+          "{\"base64\":\"\",\"filePath\":\"/oracle-home/Downloads/out.pdf\"}"
+        ],
+        [
+          "createWriteStream",
+          "/new"
+        ],
+        [
+          "write",
+          "66"
+        ],
+        [
+          "end"
+        ],
+        [
+          "finish"
+        ],
+        [
+          "toast",
+          {
+            "style": "success",
+            "title": "Converted",
+            "message": "Converted successfully: /new"
+          }
+        ],
+        [
+          "reveal",
+          "/new"
+        ]
+      ]
+    }
+  ]
+}

@@ -1,0 +1,5 @@
+{
+  "url": "https://raw.githubusercontent.com/raycast/extensions/6734d85992290066fd31a7f5bee3cca3d3545a1a/extensions/base64-to-file/LICENSE",
+  "httpStatus": 404,
+  "fallback": "fixtures/upstream/LICENSE is exact repository-root license at the same immutable commit"
+}
