@@ -29,7 +29,7 @@ for p in sorted((r/'fixtures').rglob('*')):
   e['source']='Deterministic support archive/member inventory; registry checksums in included Cargo locks and cargo-checksum metadata'
  elif 'transcript' in p.name:e['source']='Generated successful validation transcript; clone path normalized to <V2_ROOT>'
  elif 'xerj' in p.name:e['source']='Generated bounded final XERJ indexing attempt; frozen-schema failure recorded'
- else:e['source']='Generated executable V1 oracle / concrete adapter disposable-test capture' 
+ else:e['source']='Generated executable V1 oracle / concrete adapter disposable-test capture'
  files.append(e)
 lock=json.loads((r/'fixtures/v1/package-lock.json').read_text())
 libs=[]
