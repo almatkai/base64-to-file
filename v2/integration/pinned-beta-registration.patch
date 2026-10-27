@@ -1,0 +1,106 @@
+--- a/src-tauri/src/native_core/extensions/mod.rs
++++ b/src-tauri/src/native_core/extensions/mod.rs
+@@ -1,5 +1,7 @@
+ mod catalog;
+ mod native;
++#[path = "../../../native-extensions/base64-to-file/adapter.rs"]
++mod v2_base64_to_file;
+ mod perplexity;
+ mod registry;
+ mod v2_amphetamine;
+--- a/src-tauri/src/native_core/extensions/v2_runtime.rs
++++ b/src-tauri/src/native_core/extensions/v2_runtime.rs
+@@ -8,6 +8,7 @@
+         .or_else(|| id.strip_prefix("raycast."))
+         .unwrap_or(id);
+     match value {
++        "base64-to-file" => Some(value),
+         "amphetamine" | "audio-device" | "cleanshotx" | "color-picker" | "gif-search"
+         | "google-calendar" | "google-search" | "port-manager" | "speedtest" | "timers"
+         | "perplexity" => Some(value),
+@@ -19,6 +20,7 @@
+ }
+ pub(super) fn commands(slug: &str) -> &'static [&'static str] {
+     match slug {
++        "base64-to-file" => super::v2_base64_to_file::commands(),
+         "amphetamine" => super::v2_amphetamine::commands(),
+         "audio-device" => super::v2_audio_device::commands(),
+         "cleanshotx" => super::v2_cleanshotx::commands(),
+@@ -45,6 +47,7 @@
+     state: &mut Value,
+ ) -> CoreResult {
+     match slug {
++        "base64-to-file" => super::v2_base64_to_file::handle(ctx, command, operation, payload, state).await,
+         "amphetamine" => {
+             super::v2_amphetamine::handle(ctx, command, operation, payload, state).await
+         }
+--- a/src-tauri/src/native_core/extensions/v2_catalog.json
++++ b/src-tauri/src/native_core/extensions/v2_catalog.json
+@@ -2589,5 +2589,46 @@
+         "state": "not-run"
+       }
+     ]
++  },
++  {
++    "schemaVersion": 2,
++    "id": "com.tezbar.native.base64-to-file",
++    "slug": "base64-to-file",
++    "name": "Base64 to File",
++    "version": "0.1.0",
++    "description": "Convert base64 text to a file, offline. Original extension by forrestzh; Tezbar Rust Native V2 adaptation.",
++    "icon": "/extensions/icons/base64-to-file.png",
++    "runtime": "rust",
++    "replaces": [
++      "raycast.base64-to-file"
++    ],
++    "platforms": [
++      "macOS",
++      "Windows"
++    ],
++    "commands": [
++      {
++        "name": "index",
++        "title": "Convert Base64 to File",
++        "description": "Convert base64 text to file",
++        "platforms": [
++          "macOS",
++          "Windows"
++        ],
++        "runtime": "rust"
++      }
++    ],
++    "verification": [
++      {
++        "platform": "macOS",
++        "state": "not-run",
++        "note": "Host registration/rebuild and real desktop filesystem/UI/reveal QA not run."
++      },
++      {
++        "platform": "Windows",
++        "state": "not-run",
++        "note": "GNU compile/Clippy checks only; no real Windows execution or desktop QA."
++      }
++    ]
+   }
+ ]
+--- a/src-tauri/src/native_core/extensions/v2_catalog.rs
++++ b/src-tauri/src/native_core/extensions/v2_catalog.rs
+@@ -169,7 +169,7 @@
+     #[test]
+     fn bundled_ids_and_coverage_are_consistent() {
+         let items = manifests();
+-        assert_eq!(items.len(), 11);
++        assert_eq!(items.len(), 12);
+         for item in items {
+             let slug = item["slug"].as_str().unwrap();
+             assert_eq!(item["id"], v2_runtime::canonical_id(slug));
+--- a/src-tauri/Cargo.toml
++++ b/src-tauri/Cargo.toml
+@@ -21,6 +21,7 @@
+ semver = "1.0"
+ 
+ [dependencies]
++cap-std = "=3.4.5"
+ serde_json = "1.0"
+ serde = { version = "1.0", features = ["derive"] }
+ semver = "1.0"

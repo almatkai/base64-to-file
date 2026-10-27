@@ -1,0 +1,18 @@
+[package]
+name = "tezbar-base64-to-file"
+version = "0.1.0"
+edition = "2021"
+rust-version = "1.85"
+description = "Offline compiled-in Native V2 Base64 to File core and beta adapter"
+license = "MIT"
+repository = "https://github.com/almatkai/base64-to-file"
+include = ["src/**", "adapter.rs", "tests/*.rs", "tests/beta-harness/Cargo*", "tests/beta-harness/src/**", "tests/beta-harness/runtime/Cargo*", "tests/beta-harness/runtime/src/**", "tests/beta-harness/tests/**", "tests/beta-harness/tauri/Cargo.toml", "tests/beta-harness/tauri/src/**", "fixtures/**", "scripts/**", "integration/**", "assets/**", "*.md", "*.json", "Cargo.lock", "LICENSE*", ".gitignore", ".cargo/config.toml"]
+
+[dependencies]
+cap-std = "=3.4.5"
+uuid = { version = "=1.16.0", features = ["v4"] }
+
+[dev-dependencies]
+serde_json = "=1.0.140"
+tempfile = "=3.19.1"
+tokio = { version = "=1.44.2", features = ["rt-multi-thread", "macros", "sync", "time"] }

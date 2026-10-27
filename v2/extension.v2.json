@@ -1,0 +1,25 @@
+{
+  "schemaVersion": 2,
+  "id": "com.tezbar.native.base64-to-file",
+  "slug": "base64-to-file",
+  "name": "Base64 to File",
+  "version": "0.1.0",
+  "description": "Convert base64 text to a file, offline. Original extension by forrestzh; Tezbar Rust Native V2 adaptation.",
+  "icon": "/extensions/icons/base64-to-file.png",
+  "runtime": "rust",
+  "replaces": ["raycast.base64-to-file"],
+  "platforms": ["macOS", "Windows"],
+  "commands": [
+    {
+      "name": "index",
+      "title": "Convert Base64 to File",
+      "description": "Convert base64 text to file",
+      "platforms": ["macOS", "Windows"],
+      "runtime": "rust"
+    }
+  ],
+  "verification": [
+    { "platform": "macOS", "state": "not-run", "note": "Host registration/rebuild and real desktop filesystem/UI/reveal QA not run." },
+    { "platform": "Windows", "state": "not-run", "note": "GNU compile/Clippy checks only; no real Windows execution or desktop QA." }
+  ]
+}

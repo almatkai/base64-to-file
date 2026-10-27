@@ -1,0 +1,7 @@
+{
+  "prefix": "ax-885b1671721a",
+  "timeout": false,
+  "exitCode": 1,
+  "policy": "Only own indexing PID signalled; no service/schema changes",
+  "log": "test-output/xerj-final.log"
+}

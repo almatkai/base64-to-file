@@ -1,0 +1,242 @@
+{
+  "initial": {
+    "actions": [
+      {
+        "id": "b64:fc396a96-cb7e-4063-bc3b-e8a517ee7d1e:1",
+        "kind": "submit-form",
+        "title": "Convert"
+      }
+    ],
+    "commandName": "index",
+    "extensionId": "com.tezbar.native.base64-to-file",
+    "message": "Convert base64 to a file. Existing regular files are replaced.",
+    "mode": "view",
+    "ok": true,
+    "root": {
+      "children": [
+        {
+          "props": {
+            "text": "Convert base64 to a file. Existing regular files are replaced."
+          },
+          "type": "Form.Description"
+        },
+        {
+          "props": {
+            "id": "base64",
+            "placeholder": "Please enter the string encoded in base64",
+            "title": "Base64 Text"
+          },
+          "type": "Form.TextArea"
+        },
+        {
+          "props": {
+            "id": "filePath",
+            "placeholder": "Please enter the file path to convert to",
+            "title": "File Path",
+            "value": "/var/folders/7v/_tm0w_59693180wdf89zpwmh0000gn/T/.tmp0iYrO3/Downloads/out.pdf"
+          },
+          "type": "Form.TextField"
+        }
+      ],
+      "props": {},
+      "type": "Form"
+    },
+    "sessionId": "native-extension:11d18581-140f-48a6-b3ae-f59b1caa36ff",
+    "title": "Convert Base64 to File"
+  },
+  "refreshed": {
+    "actions": [
+      {
+        "id": "b64:fc396a96-cb7e-4063-bc3b-e8a517ee7d1e:12",
+        "kind": "action",
+        "title": "Retry Show in Folder"
+      },
+      {
+        "id": "b64:fc396a96-cb7e-4063-bc3b-e8a517ee7d1e:8",
+        "kind": "action",
+        "title": "Convert Another File"
+      }
+    ],
+    "commandName": "index",
+    "extensionId": "com.tezbar.native.base64-to-file",
+    "message": "File saved. Show in Folder failed or was not confirmed; its outcome is uncertain. Retry only when wanted; it will not rewrite the file. Saved 3 bytes to /private/var/folders/7v/_tm0w_59693180wdf89zpwmh0000gn/T/.tmp0iYrO3/out.",
+    "mode": "view",
+    "ok": true,
+    "root": {
+      "children": [
+        {
+          "props": {
+            "text": "File saved. Show in Folder failed or was not confirmed; its outcome is uncertain. Retry only when wanted; it will not rewrite the file. Saved 3 bytes to /private/var/folders/7v/_tm0w_59693180wdf89zpwmh0000gn/T/.tmp0iYrO3/out."
+          },
+          "type": "Form.Description"
+        },
+        {
+          "props": {
+            "id": "base64",
+            "placeholder": "Please enter the string encoded in base64",
+            "title": "Base64 Text"
+          },
+          "type": "Form.TextArea"
+        },
+        {
+          "props": {
+            "id": "filePath",
+            "placeholder": "Please enter the file path to convert to",
+            "title": "File Path",
+            "value": "/var/folders/7v/_tm0w_59693180wdf89zpwmh0000gn/T/.tmp0iYrO3/Downloads/out.pdf"
+          },
+          "type": "Form.TextField"
+        }
+      ],
+      "props": {},
+      "type": "Form"
+    },
+    "sessionId": "native-extension:11d18581-140f-48a6-b3ae-f59b1caa36ff",
+    "title": "Convert Base64 to File"
+  },
+  "revealFailure": {
+    "actions": [
+      {
+        "id": "b64:fc396a96-cb7e-4063-bc3b-e8a517ee7d1e:12",
+        "kind": "action",
+        "title": "Retry Show in Folder"
+      },
+      {
+        "id": "b64:fc396a96-cb7e-4063-bc3b-e8a517ee7d1e:8",
+        "kind": "action",
+        "title": "Convert Another File"
+      }
+    ],
+    "commandName": "index",
+    "extensionId": "com.tezbar.native.base64-to-file",
+    "message": "File saved. Show in Folder failed or was not confirmed; its outcome is uncertain. Retry only when wanted; it will not rewrite the file. Saved 3 bytes to /private/var/folders/7v/_tm0w_59693180wdf89zpwmh0000gn/T/.tmp0iYrO3/out.",
+    "mode": "view",
+    "ok": true,
+    "root": {
+      "children": [
+        {
+          "props": {
+            "text": "File saved. Show in Folder failed or was not confirmed; its outcome is uncertain. Retry only when wanted; it will not rewrite the file. Saved 3 bytes to /private/var/folders/7v/_tm0w_59693180wdf89zpwmh0000gn/T/.tmp0iYrO3/out."
+          },
+          "type": "Form.Description"
+        },
+        {
+          "props": {
+            "id": "base64",
+            "placeholder": "Please enter the string encoded in base64",
+            "title": "Base64 Text"
+          },
+          "type": "Form.TextArea"
+        },
+        {
+          "props": {
+            "id": "filePath",
+            "placeholder": "Please enter the file path to convert to",
+            "title": "File Path",
+            "value": "/var/folders/7v/_tm0w_59693180wdf89zpwmh0000gn/T/.tmp0iYrO3/Downloads/out.pdf"
+          },
+          "type": "Form.TextField"
+        }
+      ],
+      "props": {},
+      "type": "Form"
+    },
+    "sessionId": "native-extension:11d18581-140f-48a6-b3ae-f59b1caa36ff",
+    "title": "Convert Base64 to File"
+  },
+  "saved": {
+    "actions": [
+      {
+        "id": "b64:fc396a96-cb7e-4063-bc3b-e8a517ee7d1e:10",
+        "kind": "action",
+        "title": "Show in Folder"
+      },
+      {
+        "id": "b64:fc396a96-cb7e-4063-bc3b-e8a517ee7d1e:8",
+        "kind": "action",
+        "title": "Convert Another File"
+      }
+    ],
+    "commandName": "index",
+    "extensionId": "com.tezbar.native.base64-to-file",
+    "message": "File saved. The host acknowledged Show in Folder. Saved 3 bytes to /private/var/folders/7v/_tm0w_59693180wdf89zpwmh0000gn/T/.tmp0iYrO3/out.",
+    "mode": "view",
+    "ok": true,
+    "root": {
+      "children": [
+        {
+          "props": {
+            "text": "File saved. The host acknowledged Show in Folder. Saved 3 bytes to /private/var/folders/7v/_tm0w_59693180wdf89zpwmh0000gn/T/.tmp0iYrO3/out."
+          },
+          "type": "Form.Description"
+        },
+        {
+          "props": {
+            "id": "base64",
+            "placeholder": "Please enter the string encoded in base64",
+            "title": "Base64 Text"
+          },
+          "type": "Form.TextArea"
+        },
+        {
+          "props": {
+            "id": "filePath",
+            "placeholder": "Please enter the file path to convert to",
+            "title": "File Path",
+            "value": "/var/folders/7v/_tm0w_59693180wdf89zpwmh0000gn/T/.tmp0iYrO3/Downloads/out.pdf"
+          },
+          "type": "Form.TextField"
+        }
+      ],
+      "props": {},
+      "type": "Form"
+    },
+    "sessionId": "native-extension:11d18581-140f-48a6-b3ae-f59b1caa36ff",
+    "title": "Convert Base64 to File"
+  },
+  "validation": {
+    "actions": [
+      {
+        "id": "b64:fc396a96-cb7e-4063-bc3b-e8a517ee7d1e:5",
+        "kind": "submit-form",
+        "title": "Convert"
+      }
+    ],
+    "commandName": "index",
+    "extensionId": "com.tezbar.native.base64-to-file",
+    "message": "Error: Base64 Text and File Path are required",
+    "mode": "view",
+    "ok": true,
+    "root": {
+      "children": [
+        {
+          "props": {
+            "text": "Error: Base64 Text and File Path are required"
+          },
+          "type": "Form.Description"
+        },
+        {
+          "props": {
+            "id": "base64",
+            "placeholder": "Please enter the string encoded in base64",
+            "title": "Base64 Text"
+          },
+          "type": "Form.TextArea"
+        },
+        {
+          "props": {
+            "id": "filePath",
+            "placeholder": "Please enter the file path to convert to",
+            "title": "File Path",
+            "value": "/var/folders/7v/_tm0w_59693180wdf89zpwmh0000gn/T/.tmp0iYrO3/Downloads/out.pdf"
+          },
+          "type": "Form.TextField"
+        }
+      ],
+      "props": {},
+      "type": "Form"
+    },
+    "sessionId": "native-extension:11d18581-140f-48a6-b3ae-f59b1caa36ff",
+    "title": "Convert Base64 to File"
+  }
+}

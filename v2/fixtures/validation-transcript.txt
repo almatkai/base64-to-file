@@ -1,0 +1,137 @@
+Offline support verified; local vendor and beta harness ready
+Pinned full draft-2020 schema: manifest + 11 negative cases; exact original icon: PASS
+Executable immutable V1/useForm oracle reproduced
+Pinned Form parser/reconciliation, full submit maps, field callback value shape, actual surface handlers, Detail/List parser smoke and action ordering: PASS
+Registration dry run on disposable pinned host and preceding-port fixture: PASS (real host untouched)
+   Compiling tezbar-base64-to-file v0.1.0 (<V2_ROOT>)
+    Finished `test` profile [unoptimized + debuginfo] target(s) in 0.34s
+     Running unittests src/lib.rs (target/debug/deps/tezbar_base64_to_file-5d3b775de75da5e7)
+
+running 2 tests
+test tests::stage_collision_never_removes_or_modifies_an_existing_entry ... ok
+test tests::partial_failure_leaves_original_and_no_stage ... ok
+
+test result: ok. 2 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.00s
+
+     Running tests/core.rs (target/debug/deps/core-f47caf172ac08efe)
+
+running 6 tests
+test executable_v1_oracle_bytes_and_rejections ... ok
+test concurrent_publication_has_only_complete_outputs_and_no_stages ... ok
+test link_policy_permissions_and_parent_alias ... ok
+test real_create_binary_overwrite_zero_and_failures ... ok
+test raced_final_symlink_never_writes_its_target ... ok
+test bounded_work_never_truncates ... ok
+
+test result: ok. 6 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.39s
+
+   Doc-tests tezbar_base64_to_file
+
+running 0 tests
+
+test result: ok. 0 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.00s
+
+   Compiling beta-runtime v0.1.0 (<V2_ROOT>/tests/beta-harness/runtime)
+   Compiling beta-harness v0.1.0 (<V2_ROOT>/tests/beta-harness)
+    Finished `test` profile [unoptimized + debuginfo] target(s) in 0.68s
+     Running unittests src/lib.rs (tests/beta-harness/target/debug/deps/beta_harness-eabbe3a0bdc243b0)
+
+running 0 tests
+
+test result: ok. 0 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.00s
+
+     Running tests/adapter.rs (tests/beta-harness/target/debug/deps/adapter-d0d4db89c756b6ed)
+
+running 8 tests
+test cancelled_reveal_retains_saved_receipt_and_requires_deliberate_retry ... ok
+test cloned_search_refresh_state_and_token_lifecycle ... ok
+test export_renderer_samples_when_requested ... ok
+test strict_acknowledgements_reveal_retry_never_rewrites ... ok
+test actual_native_sessions_binary_write_reveal_once_and_stale_cross_session ... ok
+test malformed_inputs_validation_io_errors_preserve_drafts_and_never_reveal ... ok
+test four_write_limit_rejects_without_io_and_recovers_after_workers_finish ... ok
+test cancelled_write_future_worker_still_records_completion ... ok
+
+test result: ok. 8 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.14s
+
+   Doc-tests beta_harness
+
+running 0 tests
+
+test result: ok. 0 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.00s
+
+   Compiling tezbar-base64-to-file v0.1.0 (<V2_ROOT>)
+    Finished `test` profile [unoptimized + debuginfo] target(s) in 0.33s
+     Running unittests src/lib.rs (target/debug/deps/tezbar_base64_to_file-6e76d613abb2a356)
+
+running 2 tests
+test tests::stage_collision_never_removes_or_modifies_an_existing_entry ... ok
+test tests::partial_failure_leaves_original_and_no_stage ... ok
+
+test result: ok. 2 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.00s
+
+     Running tests/core.rs (target/debug/deps/core-3ff5f95a287e376e)
+
+running 6 tests
+test executable_v1_oracle_bytes_and_rejections ... ok
+test concurrent_publication_has_only_complete_outputs_and_no_stages ... ok
+test real_create_binary_overwrite_zero_and_failures ... ok
+test link_policy_permissions_and_parent_alias ... ok
+test raced_final_symlink_never_writes_its_target ... ok
+test bounded_work_never_truncates ... ok
+
+test result: ok. 6 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.38s
+
+   Doc-tests tezbar_base64_to_file
+
+running 0 tests
+
+test result: ok. 0 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.00s
+
+   Compiling beta-runtime v0.1.0 (<V2_ROOT>/tests/beta-harness/runtime)
+   Compiling beta-harness v0.1.0 (<V2_ROOT>/tests/beta-harness)
+    Finished `test` profile [unoptimized + debuginfo] target(s) in 0.75s
+     Running unittests src/lib.rs (tests/beta-harness/target/debug/deps/beta_harness-6e9ccfafb767ee66)
+
+running 0 tests
+
+test result: ok. 0 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.00s
+
+     Running tests/adapter.rs (tests/beta-harness/target/debug/deps/adapter-4eab7e5ff5a0841c)
+
+running 8 tests
+test actual_native_sessions_binary_write_reveal_once_and_stale_cross_session ... ok
+test malformed_inputs_validation_io_errors_preserve_drafts_and_never_reveal ... ok
+test cancelled_reveal_retains_saved_receipt_and_requires_deliberate_retry ... ok
+test strict_acknowledgements_reveal_retry_never_rewrites ... ok
+test cloned_search_refresh_state_and_token_lifecycle ... ok
+test export_renderer_samples_when_requested ... ok
+test cancelled_write_future_worker_still_records_completion ... ok
+test four_write_limit_rejects_without_io_and_recovers_after_workers_finish ... ok
+
+test result: ok. 8 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.12s
+
+   Doc-tests beta_harness
+
+running 0 tests
+
+test result: ok. 0 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.00s
+
+    Checking tezbar-base64-to-file v0.1.0 (<V2_ROOT>)
+    Finished `dev` profile [unoptimized + debuginfo] target(s) in 0.15s
+    Checking beta-runtime v0.1.0 (<V2_ROOT>/tests/beta-harness/runtime)
+    Checking beta-harness v0.1.0 (<V2_ROOT>/tests/beta-harness)
+    Finished `dev` profile [unoptimized + debuginfo] target(s) in 0.22s
+    Checking beta-runtime v0.1.0 (<V2_ROOT>/tests/beta-harness/runtime)
+    Finished `dev` profile [unoptimized + debuginfo] target(s) in 0.11s
+    Checking tezbar-base64-to-file v0.1.0 (<V2_ROOT>)
+    Finished `dev` profile [unoptimized + debuginfo] target(s) in 0.19s
+    Checking tezbar-base64-to-file v0.1.0 (<V2_ROOT>)
+    Finished `dev` profile [unoptimized + debuginfo] target(s) in 0.14s
+    Checking beta-runtime v0.1.0 (<V2_ROOT>/tests/beta-harness/runtime)
+    Checking beta-harness v0.1.0 (<V2_ROOT>/tests/beta-harness)
+    Finished `dev` profile [unoptimized + debuginfo] target(s) in 0.29s
+    Checking beta-harness v0.1.0 (<V2_ROOT>/tests/beta-harness)
+    Finished `dev` profile [unoptimized + debuginfo] target(s) in 0.16s
+    Checking beta-runtime v0.1.0 (<V2_ROOT>/tests/beta-harness/runtime)
+    Finished `dev` profile [unoptimized + debuginfo] target(s) in 0.10s
